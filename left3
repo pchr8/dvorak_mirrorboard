@@ -1,7 +1,7 @@
-// Dvorak MirrorBoard v2, based on MirrorBoard one-hand keymapping
+// Pchr8board, formerly known Dvorak MirrorBoard (v3), based on MirrorBoard one-hand keymapping
 
 // Original keymap: https://blog.xkcd.com/2007/08/14/mirrorboard-a-one-handed-keyboard-layout-for-the-lazy/
-// Changes and details: https://www.pchr8.net/blog/2017/02/02/dvorak-mirrorboard-layout-based-randall-munroes-mirrorboard/
+// Changes and details: https://www.pchr8.net/blog/2017/11/10/third-update-dvorak-mirrorboard-now-called-pchr8board/
 
 default  partial alphanumeric_keys modifier_keys
   xkb_symbols   "dvorak-mirrorboard" {
@@ -47,19 +47,21 @@ default  partial alphanumeric_keys modifier_keys
     key <AE04> {	[	  4,	dollar,		7,	ampersand	]	};
     key <AE05> {	[	  5,	percent,	6,	asciicircum	]	};
 
-    key <AD06> { [	    f,	F  		]	};
-    key <AD07> { [	    g,	G		]	};
+    // Backspace and arrow keys
     key <AD08> { [	    c,	C,	Up,	 Up	]	};
     key <AD09> { [	    r,	R,	BackSpace,	BackSpace		]	};
+    key <AC07> { [	    h,	H,	Left,	Left		]	};
+    key <AC08> { [	    t,	T,	Down,	Down   ]	};
+    key <AC09> { [	    n,	N,	Right,	Right		]	};
+
+    key <AD06> { [	    f,	F  		]	};
+    key <AD07> { [	    g,	G		]	};
     key <AD10> { [	    l,	L		]	};
     key <AD11> { [	slash,	question	]	};
     key <AD12> { [	equal,	plus		]	};
 
 
     key <AC06> { [	    d,	D		]	};
-    key <AC07> { [	    h,	H,	Left,	Left		]	};
-    key <AC08> { [	    t,	T,	Down,	Down   ]	};
-    key <AC09> { [	    n,	N,	Right,	Right		]	};
     key <AC10> { [	    s,	S		]	};
     key <AC11> { [	minus,	underscore	]	};
 
