@@ -2,6 +2,8 @@
 This is a heavily modified Dvorak version of Mirrorboard by Randall Munroe. 
 A better description can be found on [the project's page](https://www.pchr8.net/blog/english/it/projects/2019/03/26/Pchr8board-dvorak.html) on my website.
 
+[[https://github.com/pchr8/dvorak_mirrorboard/blob/master/keyboard-layout.png|alt=pchr8board]]
+
 ## How to use
 Copy the file `pchr8board` to you systems' key definitions directory, in my case it was `/usr/share/X11/xkb/symbols/`. Then you can activate it with `setxkbmap pchr8board` or however you set your layouts.
 
