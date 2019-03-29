@@ -1,8 +1,11 @@
-# dvorak_mirrorboard
-A heavily modified Dvorak version of the MirrorBoard, now called Pchr8board
-Previous versions sadly gone because I am learning to use git push -f :)
-Regardless, this is the keyboard I currently use. It's based on Randall Munroe's Mirrorboard, more details here: 
-https://www.pchr8.net/blog/2017/11/10/third-update-dvorak-mirrorboard-now-called-pchr8board/
+# Pchr8board
+This is a heavily modified Dvorak version of Mirrorboard by Randall Munroe. 
+A better description can be found on [the project's page](https://www.pchr8.net/blog/english/it/projects/2019/03/26/Pchr8board-dvorak.html) on my website.
 
-It adds a "latch" key that can be used to type with your left hand using a mirrored Dvorak keyboard. The last third version adds arrow keys on the right hand  and a backspace, so that I don't have 
-to change my arms' position to reach them.
+## How to use
+Copy the file `pchr8board` to you systems' key definitions directory, in my case it was `/usr/share/X11/xkb/symbols/`. Then you can activate it with `setxkbmap pchr8board` or however you set your layouts.
+
+## What else does the repo contain?
+In `own_layouts/` I have the layouts I currently use. 
+* `ruua` is a mixed Ukrainian/Russian layout with some key locations I like a bit more.
+* `left3` and `umlauted` are my current English Dvorak layouts. The first one has basic definitions mostly similar to `pchr8board`, and `umlauted` has some changes I find useful for me, like umlauts in place of some left-hand mirrorboard keys (that are accessible with `Shift+Alt+$key` still).
