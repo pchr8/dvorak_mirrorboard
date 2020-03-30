@@ -1,7 +1,7 @@
-// Dvorak MirrorBoard v3, based on MirrorBoard one-hand keymapping
+// Dvorak MirrorBoard v5, based on MirrorBoard one-hand keymapping
 
-// Original keymap: https://blog.xkcd.com/2007/08/14/mirrorboard-a-one-handed-keyboard-layout-for-the-lazy/
-// Changes and details: https://www.pchr8.net/blog/2017/02/02/dvorak-mirrorboard-layout-based-randall-munroes-mirrorboard/
+// I don't use the left-hand keys too much, especially not the capitals
+// So here I add some punctuation to the alt-keys
 
 default  partial alphanumeric_keys modifier_keys
   xkb_symbols   "dmru" {
@@ -94,14 +94,34 @@ default  partial alphanumeric_keys modifier_keys
 
 // Changing aoeu for umlauted letters
 
-    key <AC01> { [	    a,	A, s, adiaeresis 		]	};
-    key <AC02> { [	    o,	O, n, odiaeresis		]	};
-    key <AC03> { [	    e,	E, t, ediaeresis		]	};
-    key <AC04> { [	    u,	U, h, udiaeresis		]	};
+    key <AC01> { [	    a,	A, adiaeresis,	s]	};
+    key <AC02> { [	    o,	O, odiaeresis,	n]	};
+    key <AC03> { [	    e,	E, ediaeresis,	t]	};
+    key <AC04> { [	    u,	U, udiaeresis,	u]	};
 
 // Adding ~` to the better key for this
 
-    key <AD01> { [  apostrophe,	quotedbl,   grave,  asciitilde] };
+    key <AD01> { [  apostrophe,	quotedbl,	grave,	asciitilde] };
+    key <AD02> { [	comma,	less,   r, asciitilde] };
+// Adding parentheses in a better place
 
+    key <AD08> { [	    c,	C,	Up,	 parenleft	]	};
+    key <AD09> { [	    r,	R,	BackSpace,	parenright		]	};
+
+    key <AD07> { [	    g,	G,	bracketleft,	braceleft		]	};
+    key <AD10> { [	    l,	L,	bracketright,	braceright]	};
+
+// Numbers!
+
+    key <AB01> { [   semicolon,	colon,1,	exclam] };
+    key <AB02> { [	    q,	Q,	2,	at		]	};
+    key <AB03> { [	    j,	J,	3,	numbersign		]	};
+    key <AB04> { [	    k,	K,	4,	dollar		]	};
+    key <AB05> { [	    x,	X,	5,	percent		]	};
+    key <AB06> { [	    b,	B,	6,	asciicircum]	};
+    key <AB07> { [	    m,	M,	7,	ampersand]	};
+    key <AB08> { [	    w,	W,	8,	asterisk]	};
+    key <AB09> { [	    v,	V,	9,	asterisk]	};
+    key <AB10> { [	    z,	Z,	0,	asterisk]	};
 
   };
