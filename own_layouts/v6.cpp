@@ -11,14 +11,16 @@ xkb_symbols   "sh" {
 
 	//// TAB AND FRIENDS  
 	// Mod+Space is return
+	// TODO
 	key <SPCE> { [ space, space, Return ] };
 
-	// TODO Tilde is Backspace by itself, 
+	// TODO 
 	// Mod+Tilde is Return,Shift+Tilde= quoteleft (tick), shift+mod = tilde
-	key <TLDE> {	[     BackSpace,	quoteleft,	Return,	asciitilde]	};
+	key <TLDE> {	[     BackSpace,	quoteleft,	Return,	 Multi_key]	};
 
-	// backslash, ???
-	key  <TAB> {	[ Tab,	ISO_Left_Tab, backslash, dead_diaeresis]	};
+	// Tab, Tab-Back, /, umlaut
+	// TODO 
+	key  <TAB> {	[ Tab,	ISO_Left_Tab, slash, dead_diaeresis]	};
 
 	// Switch groups by RCTL
 	key  <RCTL> {	[ISO_Next_Group]	};
@@ -43,7 +45,10 @@ xkb_symbols   "sh" {
 	////
 
 	key <AD04> { [	    p,	P, asciitilde, G		]	};
-	key <AD05> { [	    y,	Y, f, F		], [a, a, a, a]	};
+	key <AD05> { 
+		[y,	Y, f, F], 
+		[a, a, a, a] 
+	};
 
 	// Umlauts
     key <AC01> { [	    a,	A, adiaeresis,	s]	};
@@ -107,4 +112,3 @@ xkb_symbols   "sh" {
 	key <AE12> {	[     bracketright,	braceright		]	};
 
 };
-
