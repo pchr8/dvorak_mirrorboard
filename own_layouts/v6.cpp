@@ -72,8 +72,8 @@ xkb_symbols   "sh" {
 	// TODO 
 	key <AD07> { [	    g,	G, Prior, Prior		]	};
 	key <AD08> { [	    c,	C,	Up,	 Up	]	};
-	key <AD09> { [	    r,	R,	BackSpace,	BackSpace		]	};
-	key <AD10> { [	    l,	L, Next, Next		]	};
+	key <AD09> { [	    r,	R,	Next,	Next		]	};
+	key <AD10> { [	    l,	L, BackSpace, Delete		]	};
 	key <AC07> { [	    h,	H,	Left,	Left		]	};
 	key <AC08> { [	    t,	T,	Down,	Down   ]	};
 	key <AC09> { [	    n,	N,	Right,	Right		]	};
