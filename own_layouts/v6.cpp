@@ -39,9 +39,9 @@ xkb_symbols   "sh" {
 	// '"`?
 	key <AD01> { [  apostrophe,	quotedbl, quoteleft, L] };
 	// ,<[?
-	key <AD02> { [	comma,	less,   bracketleft, R] };
+	key <AD02> { [	comma,	bracketleft,   parenleft, R] };
 	// .>]?
-	key <AD03> { [      period,	greater, bracketright, C] };
+	key <AD03> { [      period,	bracketright, parenright, C] };
 	////
 
 	key <AD04> { [	    p,	P, asciitilde, G		]	};
@@ -55,10 +55,6 @@ xkb_symbols   "sh" {
     key <AC02> { [	    o,	O, odiaeresis,	n]	};
     key <AC03> { [	    e,	E, ediaeresis,	t]	};
     key <AC04> { [	    u,	U, udiaeresis,	u]	};
-	// key <AC01> { [	    a,	A, s, S 		]	};
-	// key <AC02> { [	    o,	O, n, N		]	};
-	// key <AC03> { [	    e,	E, t, T		]	};
-	// key <AC04> { [	    u,	U, h, H		]	};
 	key <AC05> { [	    i,	I, d, D		]	};
 
 	key <AB01> { [   colon,	semicolon,z, Z] };
@@ -68,10 +64,11 @@ xkb_symbols   "sh" {
 	key <AB05> { [	    x,	X, b, B		]	};
 
 	key <AE01> {	[	  1,	exclam,		0,	parenleft	]	};
-	// key <AE02> {	[	  2,	at,		9,	parenright	]	};
-	// key <AE03> {	[	  3,	numbersign,	8,	asterisk	]	};
-	key <AE02> {	[	  2,	at,		parenleft,	parenright	]	};
-	key <AE03> {	[	  3,	numbersign,	parenright,	asterisk	]	};
+
+	// 2@<{
+	key <AE02> {	[	  2,	at,		less,	braceleft	]	};
+	// 3#>}
+	key <AE03> {	[	  3,	numbersign,	greater,	braceright	]	};
 	key <AE04> {	[	  4,	dollar,		7,	ampersand	]	};
 	key <AE05> {	[	  5,	percent,	6,	asciicircum	]	};
 
