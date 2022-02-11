@@ -3,6 +3,8 @@
 default  partial alphanumeric_keys modifier_keys
 xkb_symbols   "sh" {
 
+	// TODO PARENTHESES
+
 	name[Group1] = "SH Custom layout";
 	name[Group2] = "Test mirrorboard layout";
 
@@ -14,20 +16,18 @@ xkb_symbols   "sh" {
 	// TODO
 	key <SPCE> { [ space, space, Return ] };
 
-	// TODO 
-	// Mod+Tilde is Return,Shift+Tilde= quoteleft (tick), shift+mod = tilde
-	key <TLDE> {	[     BackSpace,	quoteleft,	Return,	 Multi_key]	};
+	// Bsp, Enter, **Compose Key **
+	key <TLDE> {	[     BackSpace,	NoSymbol,	Return,	 Multi_key]	};
 
-	// Tab, Tab-Back, /, umlaut
-	// TODO 
-	key  <TAB> {	[ Tab,	ISO_Left_Tab, slash, dead_diaeresis]	};
+	// Tab, LTab, /, \
+	key  <TAB> {	[ Tab,	ISO_Left_Tab, slash, backslash]	};
 
 	// Switch groups by RCTL
 	key  <RCTL> {	[ISO_Next_Group]	};
 
 	// Caps is Ctrl, ? <Escape> ?
 	// Mapping Escape to Caps+Shift doesn't work for some reason
-	key <CAPS> { type[Group1] = "FOUR_LEVEL", symbols[Group1] = [ Control_L, Escape, Escape, Escape] };
+	key <CAPS> { type[Group1] = "FOUR_LEVEL", symbols[Group1] = [ Control_L, NoSymbol, Escape, NoSymbol] };
     modifier_map Control { <CAPS> };
 
 	key <LCTL> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [Hyper_L] };
@@ -61,7 +61,7 @@ xkb_symbols   "sh" {
 	// key <AC04> { [	    u,	U, h, H		]	};
 	key <AC05> { [	    i,	I, d, D		]	};
 
-	key <AB01> { [   semicolon,	colon,z, Z] };
+	key <AB01> { [   colon,	semicolon,z, Z] };
 	key <AB02> { [	    q,	Q, v, V		]	};
 	key <AB03> { [	    j,	J, w, W		]	};
 	key <AB04> { [	    k,	K, m, M		]	};
@@ -75,7 +75,7 @@ xkb_symbols   "sh" {
 
 	//// Backspace, arrow keys, ...
 	// TODO 
-	key <AD07> { [	    g,	G, Prior, Prior		]	};
+	key <AD07> { [	    g,	G, Prior, NoSymbol		]	};
 	key <AD08> { [	    c,	C,	Up,	 Up	]	};
 	key <AD09> { [	    r,	R,	Next,	Next		]	};
 	key <AD10> { [	    l,	L, BackSpace, Delete		]	};
@@ -84,12 +84,13 @@ xkb_symbols   "sh" {
 	key <AC09> { [	    n,	N,	Right,	Right		]	};
 
 	key <AD06> { [	    f,	F  		]	};
-	key <AD11> { [	slash,	question	]	};
+	// Slash and Backslash
+	key <AD11> { [	slash,	question, backslash, NoSymbol	]	};
 	key <AD12> { [	equal,	plus		]	};
 
 
-	// dD <delete> ?
-	key <AC06> { [	    d,	D, KP_Delete, KP_Delete		]	};
+	// TODO
+	key <AC06> { [	    d,	D, NoSymbol, NoSymbol		]	};
     key <AC10> { [	    s,	S,	ssharp,	ssharp		]	};
 	key <AC11> { [	minus,	underscore	]	};
 
@@ -100,7 +101,7 @@ xkb_symbols   "sh" {
 	key <AB10> { [	    z,	Z		]	};
 
 	// +\|? - the key that by default has only backslash+bar
-	key <BKSL> { [  plus,  backslash, bar, bar             ]       };
+	key <BKSL> { [  plus,  backslash, NoSymbol, NoSymbol             ]       };
 
 
 	key <AE06> {	[	  6,	asciicircum	]	};
