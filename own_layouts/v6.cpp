@@ -3,7 +3,6 @@
 default  partial alphanumeric_keys modifier_keys
 xkb_symbols   "sh" {
 
-	// TODO PARENTHESES
 
 	name[Group1] = "SH Custom layout";
 	name[Group2] = "Test mirrorboard layout";
@@ -99,8 +98,9 @@ xkb_symbols   "sh" {
 	key <AB09> { [	    v,	V		]	};
 	key <AB10> { [	    z,	Z		]	};
 
-	// +\|? - the key that by default has only backslash+bar
-	key <BKSL> { [  plus,  backslash, NoSymbol, NoSymbol             ]       };
+	// +|\? - the key that by default has only backslash+bar
+	
+	key <BKSL> { [  plus,  bar, backslash, NoSymbol             ]       };
 
 
 	key <AE06> {	[	  6,	asciicircum	]	};
