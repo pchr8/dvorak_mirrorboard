@@ -3,6 +3,9 @@
 default  partial alphanumeric_keys modifier_keys
 xkb_symbols   "sh" {
 
+	name[Group1] = "SH Custom layout";
+	name[Group2] = "Test mirrorboard layout";
+
 	// Using L-Alt as modifier instead of Caps lock.
 	key <LALT> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Shift ] };
 
@@ -15,7 +18,9 @@ xkb_symbols   "sh" {
 	key <TLDE> {	[     BackSpace,	quoteleft,	Return,	asciitilde]	};
 
 	// backslash, ???
-	key  <TAB> {	[ Tab,	ISO_Left_Tab, backslash, dead_diaeresis]	};
+	// key  <TAB> {	[ Tab,	ISO_Left_Tab, backslash, dead_diaeresis]	};
+	key  <TAB> {	[ISO_Next_Group]	};
+
 
 	// Caps is Ctrl, ? <Escape> ?
 	// Mapping Escape to Caps+Shift doesn't work for some reason
@@ -24,6 +29,7 @@ xkb_symbols   "sh" {
 
 	key <LCTL> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [Hyper_L] };
 	modifier_map Mod3 { Hyper_L };
+
 	////
 
 	//// FIRST ROW 
@@ -36,7 +42,7 @@ xkb_symbols   "sh" {
 	////
 
 	key <AD04> { [	    p,	P, asciitilde, G		]	};
-	key <AD05> { [	    y,	Y, f, F		]	};
+	key <AD05> { [	    y,	Y, f, F		], [a, a, a, a]	};
 
 	// Umlauts
     key <AC01> { [	    a,	A, adiaeresis,	s]	};
