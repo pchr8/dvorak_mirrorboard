@@ -18,9 +18,10 @@ xkb_symbols   "sh" {
 	key <TLDE> {	[     BackSpace,	quoteleft,	Return,	asciitilde]	};
 
 	// backslash, ???
-	// key  <TAB> {	[ Tab,	ISO_Left_Tab, backslash, dead_diaeresis]	};
-	key  <TAB> {	[ISO_Next_Group]	};
+	key  <TAB> {	[ Tab,	ISO_Left_Tab, backslash, dead_diaeresis]	};
 
+	// Switch groups by RCTL
+	key  <RCTL> {	[ISO_Next_Group]	};
 
 	// Caps is Ctrl, ? <Escape> ?
 	// Mapping Escape to Caps+Shift doesn't work for some reason
@@ -84,7 +85,7 @@ xkb_symbols   "sh" {
 
 	// dD <delete> ?
 	key <AC06> { [	    d,	D, KP_Delete, KP_Delete		]	};
-	key <AC10> { [	    s,	S		]	};
+    key <AC10> { [	    s,	S,	ssharp,	ssharp		]	};
 	key <AC11> { [	minus,	underscore	]	};
 
 	key <AB06> { [	    b,	B		]	};
