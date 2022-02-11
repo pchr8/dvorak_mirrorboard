@@ -27,7 +27,7 @@ xkb_symbols   "sh" {
 
 	// Caps is Ctrl, ? <Escape> ?
 	// Mapping Escape to Caps+Shift doesn't work for some reason
-	key <CAPS> { type[Group1] = "FOUR_LEVEL", symbols[Group1] = [ Control_L, NoSymbol, Escape, NoSymbol] };
+	key <CAPS> { type[Group1] = "FOUR_LEVEL", symbols[Group1] = [ Control_L, Control_L, Escape, NoSymbol] };
     modifier_map Control { <CAPS> };
 
 	key <LCTL> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [Hyper_L] };
