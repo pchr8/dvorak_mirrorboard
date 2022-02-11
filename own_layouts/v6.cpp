@@ -21,8 +21,9 @@ xkb_symbols   "sh" {
 	// Mapping Escape to Caps+Shift doesn't work for some reason
 	key <CAPS> { type[Group1] = "FOUR_LEVEL", symbols[Group1] = [ Control_L, Escape, Escape, Escape] };
     modifier_map Control { <CAPS> };
-	// key <LCTRL> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ Control_L, Escape, Escape, Escape] };
-    // modifier_map Control { <CAPS> };
+
+	key <LCTL> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [Hyper_L] };
+	modifier_map Mod3 { Hyper_L };
 	////
 
 	//// FIRST ROW 
