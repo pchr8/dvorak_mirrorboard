@@ -16,9 +16,13 @@ xkb_symbols   "sh" {
 
 	// backslash, ???
 	key  <TAB> {	[ Tab,	ISO_Left_Tab, backslash, dead_diaeresis]	};
-	// Caplock is Control_L or Escape if with shift
-	// key.type = "ONE_LEVEL"
-	key <CAPS> {type[Group1] = "ONE_LEVEL",     [Control_L, Escape]   };
+
+	// Caps is Ctrl, ? <Escape> ?
+	// Mapping Escape to Caps+Shift doesn't work for some reason
+	key <CAPS> { type[Group1] = "FOUR_LEVEL", symbols[Group1] = [ Control_L, Escape, Escape, Escape] };
+    modifier_map Control { <CAPS> };
+	// key <LCTRL> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ Control_L, Escape, Escape, Escape] };
+    // modifier_map Control { <CAPS> };
 	////
 
 	//// FIRST ROW 
@@ -30,7 +34,7 @@ xkb_symbols   "sh" {
 	key <AD03> { [      period,	greater, bracketright, C] };
 	////
 
-	key <AD04> { [	    p,	P, g, G		]	};
+	key <AD04> { [	    p,	P, asciitilde, G		]	};
 	key <AD05> { [	    y,	Y, f, F		]	};
 
 	// Umlauts
