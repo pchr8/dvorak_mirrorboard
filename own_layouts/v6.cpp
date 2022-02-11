@@ -68,8 +68,10 @@ xkb_symbols   "sh" {
 	key <AB05> { [	    x,	X, b, B		]	};
 
 	key <AE01> {	[	  1,	exclam,		0,	parenleft	]	};
-	key <AE02> {	[	  2,	at,		9,	parenright	]	};
-	key <AE03> {	[	  3,	numbersign,	8,	asterisk	]	};
+	// key <AE02> {	[	  2,	at,		9,	parenright	]	};
+	// key <AE03> {	[	  3,	numbersign,	8,	asterisk	]	};
+	key <AE02> {	[	  2,	at,		parenleft,	parenright	]	};
+	key <AE03> {	[	  3,	numbersign,	parenright,	asterisk	]	};
 	key <AE04> {	[	  4,	dollar,		7,	ampersand	]	};
 	key <AE05> {	[	  5,	percent,	6,	asciicircum	]	};
 
