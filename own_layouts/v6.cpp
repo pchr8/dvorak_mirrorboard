@@ -38,9 +38,9 @@ xkb_symbols   "sh" {
 	// '"`?
 	key <AD01> { [  apostrophe,	quotedbl, quoteleft, L] };
 	// ,<[?
-	key <AD02> { [	comma,	bracketleft,   parenleft, R] };
+	key <AD02> { [	comma,	parenleft,   bracketleft, R] };
 	// .>]?
-	key <AD03> { [      period,	bracketright, parenright, C] };
+	key <AD03> { [      period,	parenright, bracketright, C] };
 	////
 
 	key <AD04> { [	    p,	P, asciitilde, G		]	};
@@ -73,9 +73,11 @@ xkb_symbols   "sh" {
 
 	//// Backspace, arrow keys, ...
 	// TODO 
-	key <AD07> { [	    g,	G, Prior, NoSymbol		]	};
+	// key <AD07> { [	    g,	G, Prior, NoSymbol		]	};
+	key <AD07> { [	    g,	G, parenleft, NoSymbol		]	};
 	key <AD08> { [	    c,	C,	Up,	 Up	]	};
-	key <AD09> { [	    r,	R,	Next,	Next		]	};
+	key <AD09> { [	    r,	R,	parenright,	Next		]	};
+	// key <AD09> { [	    r,	R,	Next,	Next		]	};
 	key <AD10> { [	    l,	L, BackSpace, Delete		]	};
 	key <AC07> { [	    h,	H,	Left,	Left		]	};
 	key <AC08> { [	    t,	T,	Down,	Down   ]	};
