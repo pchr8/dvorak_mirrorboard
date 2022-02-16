@@ -74,9 +74,9 @@ xkb_symbols   "sh" {
 	//// Backspace, arrow keys, ...
 	// TODO 
 	// key <AD07> { [	    g,	G, Prior, NoSymbol		]	};
-	key <AD07> { [	    g,	G, parenleft, NoSymbol		]	};
+	key <AD07> { [	    g,	G, parenleft, braceleft		]	};
 	key <AD08> { [	    c,	C,	Up,	 Up	]	};
-	key <AD09> { [	    r,	R,	parenright,	Next		]	};
+	key <AD09> { [	    r,	R,	parenright,	braceright		]	};
 	// key <AD09> { [	    r,	R,	Next,	Next		]	};
 	key <AD10> { [	    l,	L, BackSpace, Delete		]	};
 	key <AC07> { [	    h,	H,	Left,	Left		]	};
