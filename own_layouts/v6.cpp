@@ -3,9 +3,7 @@
 default  partial alphanumeric_keys modifier_keys
 xkb_symbols   "sh" {
 
-
 	name[Group1] = "SH Custom layout";
-	name[Group2] = "Test mirrorboard layout";
 
 	// Using L-Alt as modifier instead of Caps lock.
 	key <LALT> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Shift ] };
@@ -16,10 +14,11 @@ xkb_symbols   "sh" {
 	key <SPCE> { [ space, space, Return ] };
 
 	// Bsp, Enter, **Compose Key **
-	key <TLDE> {	[     BackSpace,	NoSymbol,	Return,	 Multi_key]	};
+	key <TLDE> {	[     BackSpace,	Multi_key,	Return,	 NoSymbol]	};
 
-	// Tab, LTab, /, \
-	key  <TAB> {	[ Tab,	ISO_Left_Tab, slash, backslash]	};
+	// Tab, LTab, /, b\
+
+	key  <TAB> {	[ Tab,	backslash, slash, NoSymbol]	};
 
 	// Switch groups by RCTL
 	key  <RCTL> {	[ISO_Next_Group]	};
@@ -36,24 +35,24 @@ xkb_symbols   "sh" {
 
 	//// FIRST ROW 
 	// '"`?
-	key <AD01> { [  apostrophe,	quotedbl, quoteleft, L] };
+	key <AD01> { [  apostrophe,	quotedbl, quoteleft, NoSymbol] };
 	// ,<[?
-	key <AD02> { [	comma,	parenleft,   bracketleft, R] };
+	key <AD02> { [	comma,	parenleft,   bracketleft, NoSymbol] };
 	// .>]?
-	key <AD03> { [      period,	parenright, bracketright, C] };
+	key <AD03> { [      period,	parenright, bracketright, NoSymbol] };
 	////
 
-	key <AD04> { [	    p,	P, asciitilde, G		]	};
+	key <AD04> { [	    p,	P, asciitilde, NoSymbol		]	};
 	key <AD05> { 
 		[y,	Y, f, F], 
 		[a, a, a, a] 
 	};
 
 	// Umlauts
-    key <AC01> { [	    a,	A, adiaeresis,	s]	};
-    key <AC02> { [	    o,	O, odiaeresis,	n]	};
-    key <AC03> { [	    e,	E, ediaeresis,	t]	};
-    key <AC04> { [	    u,	U, udiaeresis,	u]	};
+    key <AC01> { [	    a,	A, adiaeresis,	Adiaeresis]	};
+    key <AC02> { [	    o,	O, odiaeresis,	Odiaeresis]	};
+    key <AC03> { [	    e,	E, ediaeresis,	Ediaeresis]	};
+    key <AC04> { [	    u,	U, udiaeresis,	Udiaeresis]	};
 	key <AC05> { [	    i,	I, d, D		]	};
 
 	key <AB01> { [   colon,	semicolon,z, Z] };
@@ -62,14 +61,14 @@ xkb_symbols   "sh" {
 	key <AB04> { [	    k,	K, m, M		]	};
 	key <AB05> { [	    x,	X, b, B		]	};
 
-	key <AE01> {	[	  1,	exclam,		0,	parenleft	]	};
+	key <AE01> {	[	  1,	exclam,		NoSymbol,	NoSymbol	]	};
 
 	// 2@<{
-	key <AE02> {	[	  2,	at,		less,	braceleft	]	};
+	key <AE02> {	[	  2,	at,		less,	NoSymbol	]	};
 	// 3#>}
-	key <AE03> {	[	  3,	numbersign,	greater,	braceright	]	};
-	key <AE04> {	[	  4,	dollar,		7,	ampersand	]	};
-	key <AE05> {	[	  5,	percent,	6,	asciicircum	]	};
+	key <AE03> {	[	  3,	numbersign,	greater,	NoSymbol	]	};
+	key <AE04> {	[	  4,	dollar,		EuroSign,	NoSymbol	]	};
+	key <AE05> {	[	  5,	percent,	NoSymbol,	NoSymbol	]	};
 
 	//// Backspace, arrow keys, ...
 	// TODO 
