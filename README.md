@@ -1,12 +1,12 @@
 # My current dvorak-based keyboard layout
-![The layout](https://github.com/pchr8/dvorak_mirrorboard/blob/master/my_layout/assets_v6/keyboard-layout.png)
+![The layout](/my_layout/assets_v6/v6_final.png)
 
 # Old Pchr8board / dvorak-mirrorboard layout
 Originally this repo was about an attempt at a more generic layout. It was a Dvorak version of Mirrorboard by Randall Munroe. It lives in `./pchr8board_layout`.
 
 A better description can be found in [the original post](https://serhii.net/blog/it/2019-03-19-pchr8board-dvorak/) on my website.
 
-![The layout](https://github.com/pchr8/dvorak_mirrorboard/blob/master/pchr8board_layout/keyboard-layout.png)
+![The layout](/pchr8board_layout/keyboard-layout.png)
 
 ## How to use
 Copy the file `pchr8board` to you systems' key definitions directory, in my case it was `/usr/share/X11/xkb/symbols/`. Then you can activate it with `setxkbmap pchr8board` or however you set your layouts.
