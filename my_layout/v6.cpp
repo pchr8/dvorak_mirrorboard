@@ -37,9 +37,9 @@ xkb_symbols   "sh" {
 	// '"`?
 	key <AD01> { [  apostrophe,	quotedbl, quoteleft, NoSymbol] };
 	// ,<[?
-	key <AD02> { [	comma,	parenleft,   bracketleft, NoSymbol] };
+	key <AD02> { [	comma,	less,   bracketleft, NoSymbol] };
 	// .>]?
-	key <AD03> { [      period,	parenright, bracketright, NoSymbol] };
+	key <AD03> { [      period,	greater, bracketright, NoSymbol] };
 	////
 
 	key <AD04> { [	    p,	P, asciitilde, NoSymbol		]	};
