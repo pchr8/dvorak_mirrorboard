@@ -7,6 +7,7 @@ xkb_symbols   "sh" {
 
 	// Using L-Alt as modifier instead of Caps lock.
 	key <LALT> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Shift ] };
+	// key <RALT> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level5_Shift ] };
 
 	//// TAB AND FRIENDS  
 	// Mod+Space is return
@@ -43,10 +44,10 @@ xkb_symbols   "sh" {
 	////
 
 	key <AD04> { [	    p,	P, asciitilde, NoSymbol		]	};
-	key <AD05> { 
-		[y,	Y, f, F], 
-		[a, a, a, a] 
-	};
+
+	// Sample eight-level key
+	// key <AD05> { [y,	Y,	f,	F]};
+	key <AD05> { type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [y, Y, f, F] };
 
 	// Umlauts
     key <AC01> { [	    a,	A, adiaeresis,	Adiaeresis]	};
@@ -73,14 +74,19 @@ xkb_symbols   "sh" {
 	//// Backspace, arrow keys, ...
 	// TODO 
 	// key <AD07> { [	    g,	G, Prior, NoSymbol		]	};
-	key <AD07> { [	    g,	G, parenleft, braceleft		]	};
-	key <AD08> { [	    c,	C,	Up,	 Up	]	};
-	key <AD09> { [	    r,	R,	parenright,	braceright		]	};
-	// key <AD09> { [	    r,	R,	Next,	Next		]	};
+	
+	// numpad 123 on level5
+	key <AD07> {  type[Group1] = "EIGHT_LEVEL", symbols[Group1] =[g, G, parenleft, braceleft, 1]	};
+	key <AD08> {  type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [	    c,	C,	Up,	 Up,	2	]	};
+	key <AD09> {  type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [	    r,	R,	parenright,	braceright,	3]	};
+
+
 	key <AD10> { [	    l,	L, BackSpace, Delete		]	};
-	key <AC07> { [	    h,	H,	Left,	Left		]	};
-	key <AC08> { [	    t,	T,	Down,	Down   ]	};
-	key <AC09> { [	    n,	N,	Right,	Right		]	};
+
+	// numpad 456 on level5
+	key <AC07> {  type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [	    h,	H,	Left,	Left,	4		]	};
+	key <AC08> {  type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [	    t,	T,	Down,	Down,	5   ]	};
+	key <AC09> {  type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [	    n,	N,	Right,	Right,	6		]	};
 
 	key <AD06> { [	    f,	F  		]	};
 	// Slash and Backslash
@@ -94,9 +100,14 @@ xkb_symbols   "sh" {
 	key <AC11> { [	minus,	underscore	]	};
 
 	key <AB06> { [	    b,	B		]	};
-	key <AB07> { [	    m,	M		]	};
-	key <AB08> { [	    w,	W		]	};
-	key <AB09> { [	    v,	V		]	};
+
+
+	// Numpad 789 - both at level3 and level5. Level3 because level5 hard to type.
+	key <AB07> {  type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [	    m,	M, 7, NoSymbol, 7		]	};
+	key <AB08> {  type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [	    w,	W	, 8, NoSymbol, 8			]	};
+	key <AB09> {  type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [	    v,	V	, 9, NoSymbol, 9			]	};
+
+
 	key <AB10> { [	    z,	Z		]	};
 
 	// +|\? - the key that by default has only backslash+bar
