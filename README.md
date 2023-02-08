@@ -6,7 +6,7 @@ available for sentimental reasons but are a mess.
 
 # My current dvorak-based keyboard layout
 <!-- ![The layout](/my_layout/assets_v6/kl_cut.png) -->
-![The layout](/my_layout/assets_v6/kl-cut.png)
+![The layout](/my_layout/assets_v6/kl_cut.png)
 
 I described and documented it here: [My custom keyboard layout with dvorak and LEDs - serhii.net](https://serhii.net/blog/it/2022-06-04-220604-0136-latest-iteration-of-my-custom-dvorak-ua-ru-xkb-layout/)
 
