@@ -5,7 +5,8 @@ The previous layouts, based on my initial generic dvorak-mirrorboard layout, are
 available for sentimental reasons but are a mess.
 
 # My current dvorak-based keyboard layout
-![The layout](/my_layout/assets_v6/kl_cut.png)
+<!-- ![The layout](/my_layout/assets_v6/kl_cut.png) -->
+![The layout](/my_layout/assets_v6/keyboard-layout.png)
 
 I described and documented it here: [My custom keyboard layout with dvorak and LEDs - serhii.net](https://serhii.net/blog/it/2022-06-04-220604-0136-latest-iteration-of-my-custom-dvorak-ua-ru-xkb-layout/)
 
@@ -15,6 +16,7 @@ Features TL;DR:
 - Caps Lock acting both as Ctrl and Escape
 - things like arrow keys, BackSpace accessible at right hand resting position
 - Useful Python characters (`(){}[]<>=+-`) moved closer to the main row
+- **UPDATE**: Added numpad keys on level5! But not level5 itself. For now, `-option 'lv5:ralt_switch_lock'` works.
 
 # Old Pchr8board / dvorak-mirrorboard layout
 Originally this repo was about an attempt at a more generic layout. It was a Dvorak version of Mirrorboard by Randall Munroe. It lives in `./pchr8board_layout`.
