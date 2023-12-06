@@ -12,7 +12,11 @@ xkb_symbols   "sh" {
 	//// TAB AND FRIENDS  
 	// Mod+Space is return
 	// TODO
-	key <SPCE> { [ space, space, Return ] };
+	//key <SPCE> { [ space, space, Return ] };
+	key <SPCE> { [ space, space, Return, Escape ] };
+
+	// Thinkpad's Print key,  right of RALT, mapped to alt.
+	key <PRSC> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ Alt_L ] };
 
 	// Bsp, Enter, **Compose Key **
 	key <TLDE> {	[     BackSpace,	Multi_key,	Return,	 NoSymbol]	};
@@ -26,7 +30,8 @@ xkb_symbols   "sh" {
 
 	// Caps is Ctrl, ? <Escape> ?
 	// Mapping Escape to Caps+Shift doesn't work for some reason
-	key <CAPS> { type[Group1] = "FOUR_LEVEL", symbols[Group1] = [ Control_L, Control_L, Escape, NoSymbol] };
+	//key <CAPS> { type[Group1] = "FOUR_LEVEL", symbols[Group1] = [ Control_L, Control_L, Escape, NoSymbol] };
+	key <CAPS> { type[Group1] = "FOUR_LEVEL", symbols[Group1] = [ Control_L, Escape, Escape, Escape] };
     modifier_map Control { <CAPS> };
 
 	key <LCTL> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [Hyper_L] };
@@ -99,11 +104,10 @@ xkb_symbols   "sh" {
     key <AC10> { [	    s,	S,	ssharp,	ssharp		]	};
 	key <AC11> { [	minus,	underscore	]	};
 
-	key <AB06> { [	    b,	B		]	};
-
-
 	// Numpad 789 - both at level3 and level5. Level3 because level5 hard to type.
-	key <AB07> {  type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [	    m,	M, 7, NoSymbol, 7		]	};
+	// // endash emdash at Level5 TODO update graphic
+	key <AB06> {  type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [	    b,	B, NoSymbol, endash, 7		]	};
+	key <AB07> {  type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [	    m,	M, 7, emdash, 7		]	};
 	key <AB08> {  type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [	    w,	W	, 8, NoSymbol, 8			]	};
 	key <AB09> {  type[Group1] = "EIGHT_LEVEL", symbols[Group1] = [	    v,	V	, 9, NoSymbol, 9			]	};
 
@@ -124,3 +128,4 @@ xkb_symbols   "sh" {
 	key <AE12> {	[     bracketright,	braceright		]	};
 
 };
+

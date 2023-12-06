@@ -17,6 +17,7 @@ Features TL;DR:
 - things like arrow keys, BackSpace accessible at right hand resting position
 - Useful Python characters (`(){}[]<>=+-`) moved closer to the main row
 - **UPDATE**: Added numpad keys on level5! But not level5 itself. For now, `-option 'lv5:ralt_switch_lock'` works.
+- **UPDATE** Level5 B/N (`S-Latch-B`/`S-Latch-n`; Dvorak B/N corresponds to Querty M/N keys!) contain the em-dash/— and en-dash/– respectively (**TODO** not yet reflected in graphic above)
 
 # Old Pchr8board / dvorak-mirrorboard layout
 Originally this repo was about an attempt at a more generic layout. It was a Dvorak version of Mirrorboard by Randall Munroe. It lives in `./pchr8board_layout`.
