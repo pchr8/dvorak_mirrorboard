@@ -13,7 +13,7 @@ xkb_symbols   "sh" {
 	// Mod+Space is return
 	// TODO
 	//key <SPCE> { [ space, space, Return ] };
-	key <SPCE> { [ space, space, Return, Escape ] };
+	key <SPCE> { [ space, space, Escape, Escape ] };
 
 	// Thinkpad's Print key,  right of RALT, mapped to alt.
 	key <PRSC> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ Alt_L ] };
@@ -28,10 +28,9 @@ xkb_symbols   "sh" {
 	// Switch groups by RCTL
 	key  <RCTL> {	[ISO_Next_Group]	};
 
-	// Caps is Ctrl, ? <Escape> ?
-	// Mapping Escape to Caps+Shift doesn't work for some reason
-	//key <CAPS> { type[Group1] = "FOUR_LEVEL", symbols[Group1] = [ Control_L, Control_L, Escape, NoSymbol] };
-	key <CAPS> { type[Group1] = "FOUR_LEVEL", symbols[Group1] = [ Control_L, Escape, Escape, Escape] };
+	// Caps: <Ctrl> ? <Esc> ?
+	// Shift+Ctrl => Esc works, but makes many bindings unusable.
+	key <CAPS> { type[Group1] = "FOUR_LEVEL", symbols[Group1] = [ Control_L, Control_L, Escape, NoSymbol] };
     modifier_map Control { <CAPS> };
 
 	key <LCTL> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [Hyper_L] };
