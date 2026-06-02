@@ -23,7 +23,9 @@ xkb_symbols   "sh" {
 
 	// Tab, LTab, /, b\
 
-	key  <TAB> {	[ Tab,	backslash, slash, NoSymbol]	};
+	// Any symbol w/ Shift would break Ctrl+Shift+Tab (e.g. one tab back in browser)
+	// TODO update graphic
+	key  <TAB> {	[ Tab,	NoSymbol, NoSymbol, NoSymbol]	};
 
 	// Switch groups by RCTL
 	key  <RCTL> {	[ISO_Next_Group]	};
